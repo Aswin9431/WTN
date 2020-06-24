@@ -1,27 +1,17 @@
 package com.wipro.arrays;
 
+import java.util.*;
+
 public class Ex7 {
-	public static void main(String[] args)
-	{
-	    int nums[]={1,10,10,2};
-		 int i = 0;
-    
-    while(i < nums.length && nums[i] != 10)
-        i++;
-              
-    for(int j = i + 1; j < nums.length; j++) {
-        if(nums[j] != 10) {
-            nums[i] = nums[j];
-            nums[j] = 10;
-            i++;
-        }
-    }
-                                              
-    for( ; i < nums.length; i++)
-        nums[i] = 0;
-    for(i=0;i<nums.length;i++)
-    {
-        System.out.println(nums[i]);
-    }
+	public static void main(String[] args) {
+		int[] array = {12, 34, 12, 45, 67, 89};
+		List<Integer> distinctArray = new ArrayList<>();
+		
+		for (int item : array) {
+			if (!distinctArray.contains(item))
+				distinctArray.add(item);
+		}
+		
+		System.out.println(Arrays.toString(distinctArray.toArray()));		
 	}
 }
