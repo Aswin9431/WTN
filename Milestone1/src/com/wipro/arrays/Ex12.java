@@ -3,7 +3,7 @@ package com.wipro.arrays;
 public class Ex12 {
 	public static void main(String[] args)
 	{
-	    int n=0,d,e;
+	    int d,e;
 		int a[]={1,2,3};
 		int b[]={4,5,6};
 		int c[]=new int[2];

@@ -4,7 +4,7 @@ public class Ex13 {
 	 public static void main(String args[])
 	    {
 	    int a=args.length;
-	    int x,i;
+	    int i;
 	    int arr[][] = new int[4][4];
 	    if(a<4)
 	    {
